@@ -5923,6 +5923,7 @@ GameObject:
   - component: {fileID: 659282169}
   - component: {fileID: 659282168}
   - component: {fileID: 659282173}
+  - component: {fileID: 659282174}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -6245,7 +6246,7 @@ MonoBehaviour:
   maxSpeed: 5
   jumpForce: 5
   spriteRenderer: {fileID: 0}
-  animator: {fileID: 0}
+  animator: {fileID: 659282174}
 --- !u!114 &659282173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6258,6 +6259,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c40f7553b2ef6aa419d25e2d4dd11dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &659282174
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659282165}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 107eb3a1c691b6744a4dde7db35a77f6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &712916953
 GameObject:
   m_ObjectHideFlags: 0
@@ -7886,7 +7909,7 @@ GameObject:
   - component: {fileID: 1247290307}
   - component: {fileID: 1247290306}
   m_Layer: 5
-  m_Name: Dialogue
+  m_Name: DialogueCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9744,7 +9767,8 @@ Transform:
   m_LocalPosition: {x: -5.879368, y: -1.5475662, z: 0.061057273}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2143550595}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2050157033
@@ -10411,7 +10435,7 @@ GameObject:
   - component: {fileID: 2143550593}
   - component: {fileID: 2143550592}
   m_Layer: 0
-  m_Name: ControlsTrigger
+  m_Name: KontrollTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10547,12 +10571,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2143550591}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.98, y: -3.64, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.1006317, y: -2.092434, z: -0.061057273}
   m_LocalScale: {x: 0.50169146, y: 0.5483, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1998515731}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -10560,16 +10584,15 @@ SceneRoots:
   m_Roots:
   - {fileID: 2083568941}
   - {fileID: 79429544}
+  - {fileID: 1029521471}
+  - {fileID: 386113527}
   - {fileID: 1319012019}
   - {fileID: 1947904601}
   - {fileID: 716238339}
   - {fileID: 996210681}
-  - {fileID: 1029521471}
-  - {fileID: 2143550595}
   - {fileID: 1998515731}
   - {fileID: 1246309993}
   - {fileID: 851969513}
   - {fileID: 1247290309}
   - {fileID: 1712535466}
-  - {fileID: 386113527}
   - {fileID: 2061767915}
